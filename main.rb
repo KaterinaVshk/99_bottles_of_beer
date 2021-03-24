@@ -17,7 +17,7 @@ class SongBottles
       start_verse + " #{number - 1} bottle of beer on the wall!\n\n"
     when 1
       " #{number} bottle of beer on the wall,\n" \
-      " #{number} bottle of beer!\n Take one down,\n Pass it around,\n" \
+      " #{number} bottle of beer!\n Take it down,\n Pass it around,\n" \
       " No more bottles of beer on the wall!\n\n"
     else
       start_verse + " #{number - 1} bottles of beer on the wall!\n\n"
@@ -41,7 +41,7 @@ class SongBottlesTest < Minitest::Test
 
   def test_1_bottle_verse
     assert_equal  " 1 bottle of beer on the wall,\n" \
-    " 1 bottle of beer!\n Take one down,\n Pass it around,\n" \
+    " 1 bottle of beer!\n Take it down,\n Pass it around,\n" \
     " No more bottles of beer on the wall!\n\n", SongBottles.new.verse(1)
   end
 end
